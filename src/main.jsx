@@ -6,6 +6,8 @@ import { createBrowserRouter } from "react-router";
 import RootLayout from "./layout/RootLayout";
 import Keens from "./pages/keens/Keens";
 import TimeLine from "./pages/timeLine/TimeLine";
+import StatAnalytics from "./pages/statAnalytics/statAnalytics";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 const router = createBrowserRouter([
   {
@@ -24,9 +26,13 @@ const router = createBrowserRouter([
         path: "/timeline",
         element: <TimeLine />,
       },
+      {
+        path: "/statAnalytics",
+        element: <StatAnalytics />,
+      },
     ],
 
-    errorElement: <h1> 404 error : No Page Found</h1>,
+    errorElement: <NotFoundPage />,
   },
 ]);
 
