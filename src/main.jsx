@@ -8,6 +8,7 @@ import Keens from "./pages/keens/Keens";
 import TimeLine from "./pages/timeLine/TimeLine";
 import StatAnalytics from "./pages/statAnalytics/statAnalytics";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+import HomePage from "./pages/homePage/HomePage";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <h1> Home Page</h1>,
+        element: <HomePage />,
       },
       {
         path: "/keens",
