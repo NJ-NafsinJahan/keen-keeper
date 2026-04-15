@@ -8,9 +8,8 @@ const Footer = () => {
   return (
     <div className=" bg-[#244D3F] ">
       {/* div for contact footer */}
-      <div></div>
 
-      <div className="h-[103.25 px] flex flex-col justify-center items-center gap-4 p-4">
+      <div className="h-[103.25 px] flex flex-col justify-center items-center gap-4 p-4 ">
         <img src={footerImg} alt="" className=" mt-5" />
         <p className="font-normal text-[16px] text-gray-300 mb-4">
           Your personal shelf of meaningful connections. Browse, tend, and
