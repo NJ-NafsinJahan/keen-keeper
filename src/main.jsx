@@ -9,6 +9,7 @@ import TimeLine from "./pages/timeLine/TimeLine";
 import StatAnalytics from "./pages/statAnalytics/statAnalytics";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import HomePage from "./pages/homePage/HomePage";
+import KeenDetails from "./pages/keenDetails.jsx/KeenDetails";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/keens",
         element: <Keens />,
+      },
+      {
+        path: "/keens/:id",
+        element: <KeenDetails />,
       },
       {
         path: "/timeline",

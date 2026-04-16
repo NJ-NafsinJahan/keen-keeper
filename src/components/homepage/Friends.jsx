@@ -1,22 +1,11 @@
 import React, { useEffect, useState } from "react";
 import SarahImg from "../../assets/images/Sarah.png";
 import { ClipLoader, FadeLoader } from "react-spinners";
+import useFriends from "../../hooks/useFriends";
 
 const Friends = () => {
-  const [friends, setFriends] = useState([]);
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    const fetchData = async () => {
-      const res = await fetch("/data.json");
-      const data = await res.json();
-      console.log(data, "Data");
-      setTimeout(() => {
-        setFriends(data);
-        setLoading(false);
-      }, 1000);
-    };
-    fetchData();
-  }, []);
+  const { friends, loading } = useFriends();
+
   console.log(friends, "Friends");
   console.log(loading, "Loading");
 
