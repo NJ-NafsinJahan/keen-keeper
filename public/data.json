@@ -7,9 +7,9 @@
     "days_since_contact": 12,
     "status": "overdue",
     "tags": ["college"],
-    "bio": "Met in university. Love hiking together.",
+    "bio": "Met in university. Love hiking together",
     "goal": 14,
-    "next_due_date": "2025-07-20"
+    "next_due_date": "July 20, 2025"
   },
   {
     "id": 2,
@@ -19,9 +19,9 @@
     "days_since_contact": 10,
     "status": "almost due",
     "tags": ["office", "team"],
-    "bio": "Works in marketing team.",
+    "bio": "Works in marketing team",
     "goal": 14,
-    "next_due_date": "2025-07-22"
+    "next_due_date": "July 22, 2025"
   },
   {
     "id": 3,
@@ -31,9 +31,9 @@
     "days_since_contact": 5,
     "status": "on-track",
     "tags": ["gym", "friend"],
-    "bio": "Workout partner at gym.",
+    "bio": "Workout partner at gym",
     "goal": 14,
-    "next_due_date": "2025-07-30"
+    "next_due_date": "August 18, 2025"
   },
   {
     "id": 4,
@@ -43,9 +43,9 @@
     "days_since_contact": 15,
     "status": "overdue",
     "tags": ["family"],
-    "bio": "Cousin from Dhaka.",
+    "bio": "Cousin from Dhaka",
     "goal": 14,
-    "next_due_date": "2025-07-18"
+    "next_due_date": "July 18, 2025"
   },
   {
     "id": 5,
@@ -55,9 +55,9 @@
     "days_since_contact": 13,
     "status": "almost due",
     "tags": ["client"],
-    "bio": "Important business client.",
+    "bio": "Important business client",
     "goal": 14,
-    "next_due_date": "2025-07-21"
+    "next_due_date": "July 21, 2025"
   },
   {
     "id": 6,
@@ -67,9 +67,9 @@
     "days_since_contact": 3,
     "status": "on-track",
     "tags": ["school", "friend"],
-    "bio": "School friend, loves art.",
+    "bio": "School friend, loves art",
     "goal": 14,
-    "next_due_date": "2025-08-01"
+    "next_due_date": "August 18, 2025"
   },
   {
     "id": 7,
@@ -79,9 +79,9 @@
     "days_since_contact": 20,
     "status": "overdue",
     "tags": ["colleague"],
-    "bio": "Worked together in previous company.",
+    "bio": "Worked together in previous company",
     "goal": 14,
-    "next_due_date": "2025-07-15"
+    "next_due_date": "July 18, 2025"
   },
   {
     "id": 8,
@@ -91,9 +91,9 @@
     "days_since_contact": 11,
     "status": "almost due",
     "tags": ["neighbor"],
-    "bio": "Neighbor and family friend.",
+    "bio": "Neighbor and family friend",
     "goal": 14,
-    "next_due_date": "2025-07-23"
+    "next_due_date": "July 23, 2025"
   },
   {
     "id": 9,
@@ -103,9 +103,9 @@
     "days_since_contact": 2,
     "status": "on-track",
     "tags": ["online", "gaming"],
-    "bio": "Met through online games.",
+    "bio": "Met through online games",
     "goal": 14,
-    "next_due_date": "2025-08-02"
+    "next_due_date": "August 02, 2025"
   },
   {
     "id": 10,
@@ -115,9 +115,9 @@
     "days_since_contact": 16,
     "status": "overdue",
     "tags": ["university"],
-    "bio": "University batchmate.",
+    "bio": "University batchmate",
     "goal": 14,
-    "next_due_date": "2025-07-17"
+    "next_due_date": "August 28, 2025"
   },
   {
     "id": 11,
@@ -127,9 +127,9 @@
     "days_since_contact": 12,
     "status": "almost due",
     "tags": ["colleague"],
-    "bio": "Worked together on a freelance project.",
+    "bio": "Worked together on a freelance project",
     "goal": 14,
-    "next_due_date": "2025-07-20"
+    "next_due_date": "August 18, 2025"
   },
   {
     "id": 12,
@@ -139,8 +139,8 @@
     "days_since_contact": 4,
     "status": "on-track",
     "tags": ["friend"],
-    "bio": "Childhood friend from village.",
+    "bio": "Childhood friend from village",
     "goal": 14,
-    "next_due_date": "2025-08-03"
+    "next_due_date": "August 10, 2025"
   }
 ]
