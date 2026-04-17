@@ -1,10 +1,10 @@
 # 👥 KeenKeeper — Keep Your Friendships Alive
 
-## short description
+## 🎯 short description
 
 Welcome to KeenKeeper! A React-based friendship tracker application where users can manage contacts, log interactions (calls, texts, videos), view timelines, and analyze relationship activity using interactive charts built with Recharts.
 
-## key features of this project
+## 🚀 key features of this project
 
 - Friend Management:
   Add and view friends with profile details like name, tags, bio, and contact info.

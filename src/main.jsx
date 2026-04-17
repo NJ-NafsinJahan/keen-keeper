@@ -1,22 +1,24 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import { RouterProvider } from "react-router/dom";
 import { createBrowserRouter } from "react-router";
+import { RouterProvider } from "react-router/dom";
 import RootLayout from "./layout/RootLayout";
 import Keens from "./pages/keens/Keens";
 import TimeLine from "./pages/timeLine/TimeLine";
-import StatAnalytics from "./pages/statAnalytics/statAnalytics";
+
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import HomePage from "./pages/homePage/HomePage";
 import KeenDetails from "./pages/keenDetails.jsx/KeenDetails";
 import { TimelineProvider } from "./components/context/TimelineContext";
 import { ToastContainer } from "react-toastify";
+import Analytics from "./pages/statAnalytics/Analytics";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    errorElement: <NotFoundPage />,
     children: [
       {
         path: "/",
@@ -36,11 +38,9 @@ const router = createBrowserRouter([
       },
       {
         path: "/statAnalytics",
-        element: <StatAnalytics />,
+        element: <Analytics />,
       },
     ],
-
-    errorElement: <NotFoundPage />,
   },
 ]);
 
