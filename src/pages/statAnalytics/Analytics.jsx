@@ -15,17 +15,42 @@ const Analytics = () => {
     { name: "Video", value: videoCount },
   ];
 
-  const COLORS = ["#7E35E1", "#1F2937", "#22C55E"];
+  const COLORS = ["#7E35E1", "#244D3F", "#22C55E"];
+  const interactionData = callCount + textCount + videoCount > 0;
 
   return (
     <div className="container mx-auto mt-10 shadow mb-12 rounded-2xl">
       <div className=" p-4">
-        <h1 className="text-2xl font-bold mb-6">Friendship Analytics hi :</h1>
+        <h1 className="text-2xl font-bold mb-6">Friendship Analytics :</h1>
 
         <p className="mb-4 text-gray-600">By Interaction Type</p>
       </div>
 
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center min-h-5">
+        {!interactionData ? (
+          <p className="text-gray-400 text-lg font-normal">
+            No interaction yet
+          </p>
+        ) : (
+          <PieChart width={300} height={300}>
+            <Pie
+              data={data}
+              dataKey="value"
+              nameKey="name"
+              innerRadius={60}
+              outerRadius={90}
+              paddingAngle={3}
+            >
+              {data.map((entry, index) => (
+                <Cell key={index} fill={COLORS[index]} />
+              ))}
+            </Pie>
+          </PieChart>
+        )}
+      </div>
+
+      {/* ***** */}
+      {/* <div className="flex justify-center items-center">
         <PieChart width={300} height={300}>
           <Pie
             data={data}
@@ -40,7 +65,7 @@ const Analytics = () => {
             ))}
           </Pie>
         </PieChart>
-      </div>
+      </div> */}
 
       {/* simple legend */}
       <div className="flex justify-center gap-6 mt-4 text-sm py-5">
@@ -48,6 +73,8 @@ const Analytics = () => {
         <span className="text-[#244D3F] font-normal text-[14px]">● Call</span>
         <span className="text-[#37A163]">● Video</span>
       </div>
+
+      {/* *** */}
     </div>
   );
 };

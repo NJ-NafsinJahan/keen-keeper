@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "John Doe",
-    "picture": "https://example.com/photo.jpg",
+    "picture": "https://i.ibb.co.com/27tSbb10/Emma.png",
     "email": "john@example.com",
     "days_since_contact": 12,
     "status": "overdue",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Sarah Ahmed",
-    "picture": "https://example.com/photo2.jpg",
+    "picture": "https://i.ibb.co.com/RG5sk2mH/Devid.png",
     "email": "sarah@example.com",
     "days_since_contact": 10,
     "status": "almost due",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Michael Lee",
-    "picture": "https://example.com/photo3.jpg",
+    "picture": "https://i.ibb.co.com/vxh6RYDn/Lisa.png",
     "email": "michael@example.com",
     "days_since_contact": 5,
     "status": "on-track",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Ayesha Khan",
-    "picture": "https://example.com/photo4.jpg",
+    "picture": "https://i.ibb.co.com/MK1HzzN/Ayesha.png",
     "email": "ayesha@example.com",
     "days_since_contact": 15,
     "status": "overdue",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "David Miller",
-    "picture": "https://example.com/photo5.jpg",
+    "picture": "https://i.ibb.co.com/7NC6vNpT/James.png",
     "email": "david@example.com",
     "days_since_contact": 13,
     "status": "almost due",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Nusrat Jahan",
-    "picture": "https://example.com/photo6.jpg",
+    "picture": "https://i.ibb.co.com/tMKsWXQB/Nusrat.png",
     "email": "nusrat@example.com",
     "days_since_contact": 3,
     "status": "on-track",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Imran Hossain",
-    "picture": "https://example.com/photo7.jpg",
+    "picture": "https://i.ibb.co.com/gbsMynNx/Imran.png",
     "email": "imran@example.com",
     "days_since_contact": 20,
     "status": "overdue",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "Fatima Noor",
-    "picture": "https://example.com/photo8.jpg",
+    "picture": "https://i.ibb.co.com/Zp0k1xpT/Fatima.png",
     "email": "fatima@example.com",
     "days_since_contact": 11,
     "status": "almost due",
@@ -98,7 +98,7 @@
   {
     "id": 9,
     "name": "Chris Evans",
-    "picture": "https://example.com/photo9.jpg",
+    "picture": "https://i.ibb.co.com/V0qKBwNV/Chris.png",
     "email": "chris@example.com",
     "days_since_contact": 2,
     "status": "on-track",
@@ -110,7 +110,7 @@
   {
     "id": 10,
     "name": "Tanvir Rahman",
-    "picture": "https://example.com/photo10.jpg",
+    "picture": "https://i.ibb.co.com/xq73r2Xr/Tanvir.png",
     "email": "tanvir@example.com",
     "days_since_contact": 16,
     "status": "overdue",
@@ -122,7 +122,7 @@
   {
     "id": 11,
     "name": "Lisa Brown",
-    "picture": "https://example.com/photo11.jpg",
+    "picture": "https://i.ibb.co.com/RRtBx5K/Lisa.png",
     "email": "lisa@example.com",
     "days_since_contact": 12,
     "status": "almost due",
@@ -133,8 +133,8 @@
   },
   {
     "id": 12,
-    "name": "Rafiul Islam",
-    "picture": "https://example.com/photo12.jpg",
+    "name": "James Wright",
+    "picture": "https://i.ibb.co.com/gM825thq/Jame.png",
     "email": "rafiul@example.com",
     "days_since_contact": 4,
     "status": "on-track",

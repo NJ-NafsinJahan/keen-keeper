@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router";
 import useFriends from "../../hooks/useFriends";
-import SarahImg from "../../assets/images/Sarah.png";
+// import SarahImg from "../../assets/images/Sarah.png";
 import { BiPhoneCall } from "react-icons/bi";
 import { MdOutlineTextsms } from "react-icons/md";
 import { LuVideo } from "react-icons/lu";
@@ -60,7 +60,7 @@ const KeenDetails = () => {
           {/* profile div */}
           <div className="card-body flex flex-col justify-between items-center w-88 h-80 bg-white shadow">
             <figure>
-              <img src={SarahImg} alt={expectedFriend?.name} />
+              <img src={expectedFriend?.picture} alt={expectedFriend?.name} />
             </figure>
 
             <h2 className="font-semibold text-xl text-[#1F2937]">

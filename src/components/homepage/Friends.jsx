@@ -34,7 +34,7 @@ const Friends = () => {
                     className="card bg-base-100 w-full max-w-sm shadow-sm mx-auto pt-6"
                   >
                     <figure>
-                      <img src={SarahImg} alt={friend.name} />
+                      <img src={friend.picture} alt={friend.name} />
                     </figure>
                     <div className="card-body flex flex-col justify-between items-center">
                       <h2 className="font-semibold text-xl text-[#1F2937]">

@@ -15,7 +15,7 @@ const StatAnalytics = () => {
     { name: "Video", value: videoCount },
   ];
 
-  const COLORS = ["#7E35E1", "#1F2937", "#22C55E"];
+  const COLORS = ["#7E35E1", "#244D3F", "#22C55E"];
 
   return (
     <div className="container mx-auto mt-10 shadow mb-12 rounded-2xl">
@@ -26,7 +26,7 @@ const StatAnalytics = () => {
       </div>
 
       <div className="flex justify-center items-center">
-        <PieChart width={300} height={300}>
+        <PieChart width={400} height={400}>
           <Pie
             data={data}
             dataKey="value"

@@ -6,15 +6,15 @@ Welcome to KeenKeeper! A React-based friendship tracker application where users 
 
 ## 🚀 key features of this project
 
-- Friend Management:
+- **Friend Management :**
   Add and view friends with profile details like name, tags, bio, and contact info.
-- Interaction Tracking:
+- **Interaction Tracking :**
   Log interactions (Call, Text, Video) with one click using a quick check-in system.
-- Timeline System:
+- **Timeline System :**
   View all interaction history in a clean timeline with date tracking and filtering options.
-- Analytics Dashboard:
+- **Analytics Dashboard :**
   Visualize interaction data using bar charts and pie charts (Recharts).
-- Responsive UI:
+- **Responsive UI :**
   Clean and modern design built with Tailwind CSS.
 
 ## 🛠️ Technologies to Use
