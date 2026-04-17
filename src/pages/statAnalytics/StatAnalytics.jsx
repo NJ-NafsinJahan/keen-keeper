@@ -20,7 +20,7 @@ const StatAnalytics = () => {
   return (
     <div className="container mx-auto mt-10 shadow mb-12 rounded-2xl">
       <div className=" p-4">
-        <h1 className="text-2xl font-bold mb-6">Friendship Analytics</h1>
+        <h1 className="text-2xl font-bold mb-6">Friendship Analytics :</h1>
 
         <p className="mb-4 text-gray-600">By Interaction Type</p>
       </div>
