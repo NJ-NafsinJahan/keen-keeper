@@ -7,10 +7,10 @@ const Banner = () => {
       <div className="w-full max-w-6xl  ">
         {/* Title Section  */}
         <div className="flex flex-col items-center gap-4 mt-12 text-center">
-          <h1 className="font-bold text-5xl sm:text-5xl  md:text-5xl text-[#1F2937]">
+          <h1 className="font-bold text-5xl sm:text-2xl  md:text-5xl text-[#1F2937]">
             Friends to keep close in your life
           </h1>
-          <p className=" font-normal text-[14px] sm:text-[16px] text-[#64748B] text-center max-w-xl">
+          <p className=" font-normal text-[16px] sm:text-[14px] text-[#64748B] text-center max-w-xl">
             Your personal shelf of meaningful connections. Browse, tend, and
             nurture the <br />
             relationships that matter most.

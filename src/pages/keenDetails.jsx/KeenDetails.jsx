@@ -52,11 +52,11 @@ const KeenDetails = () => {
   //   *****************
 
   return (
-    <div className="container mx-auto mt-15">
+    <div className="container mx-auto mt-10 px-4 ">
       {/* <p className="text-2xl font-semibold mb-4">Friend Details</p> */}
       {/* left section with img div*/}
-      <div className="grid grid-cols-2 justify-center items-center gap-2 my-2 mb-2 ">
-        <div className="flex flex-col justify-center items-center gap-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-2  my-2 mb-2 w-full max-w-6xl">
+        <div className="flex flex-col justify-center items-center gap-4">
           {/* profile div */}
           <div className="card-body flex flex-col justify-between items-center w-88 h-80 bg-white shadow">
             <figure>
@@ -68,7 +68,7 @@ const KeenDetails = () => {
             </h2>
 
             <p
-              className={`py-4 px-3 rounded-3xl flex items-center text-white text-[14px] font-medium ${expectedFriend?.status === "overdue" ? "bg-[#EF4444]" : expectedFriend?.status === "on-track" ? "bg-[#244D3F]" : expectedFriend?.status === "almost due" ? "bg-[#EFAD44] text-black" : ""}`}
+              className={`py-2 px-3 rounded-full flex items-center text-white text-[14px] font-medium ${expectedFriend?.status === "overdue" ? "bg-[#EF4444]" : expectedFriend?.status === "on-track" ? "bg-[#244D3F]" : expectedFriend?.status === "almost due" ? "bg-[#EFAD44] text-black" : ""}`}
             >
               {expectedFriend?.status}
             </p>
@@ -115,8 +115,8 @@ const KeenDetails = () => {
 
         {/* right section div */}
         <div>
-          {/* div-01-Static     className=" w-122 h-150 shadow "*/}
-          <div className=" flex items-center gap-7 ">
+          {/* div-01-Static */}
+          <div className=" flex  flex-col sm:flex-row items-center gap-7 ">
             <div className=" shadow rounded-lg bg-[#FFFFFF] h-25 w-48 flex flex-col justify-center items-center gap-1">
               <h1 className="font-semibold text-[22px] text-[#1F2937]/85">
                 {expectedFriend?.days_since_contact}
@@ -133,7 +133,7 @@ const KeenDetails = () => {
                 Goal (Days)
               </p>
             </div>
-            <div className="shadow rounded-lg  bg-[#FFFFFF] h-25 w-48 flex flex-col justify-center items-center gap-1">
+            <div className="shadow rounded-lg  bg-[#FFFFFF] h-25 w-48  flex flex-col justify-center items-center text-center gap-1">
               <h1 className="font-semibold text-[20px] text-[#1F2937]/85">
                 {expectedFriend?.next_due_date}
               </h1>
@@ -159,7 +159,7 @@ const KeenDetails = () => {
             </p>
           </div>
 
-          {/* div-03-Dynamic */}
+          {/* div-03-Active */}
           <div className="  bg-white shadow rounded-lg  my-7 p-7  ">
             <p className="font-medium text-[22px] text-[#244D3F] mb-4">
               Quick Check-In

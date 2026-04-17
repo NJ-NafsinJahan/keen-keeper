@@ -36,19 +36,27 @@ const Timeline = () => {
 
         {/* Dropdown Search */}
         <select
-          className=" px-6 py-2 mb-6  shadow text-[#64748B] text-[18px] font-normal"
+          className=" px-6 py-2 mb-6  shadow text-[#64748B] text-[18px] md:font-normal text-sm"
           onChange={(e) => setFilter(e.target.value)}
         >
-          <option value="">Filter Timeline</option>
-          <option value="call">Call</option>
-          <option value="text">Text</option>
-          <option value="video">Video</option>
+          <option value="" style={{ fontSize: "14px" }}>
+            Filter Timeline
+          </option>
+          <option value="call" style={{ fontSize: "14px" }}>
+            Call
+          </option>
+          <option value="text" style={{ fontSize: "14px" }}>
+            Text
+          </option>
+          <option value="video" style={{ fontSize: "14px" }}>
+            Video
+          </option>
         </select>
 
         {/* Empty page: no interaction */}
         {filteredData.length === 0 ? (
           <div className="text-center text-gray-400 mt-40 shadow">
-            <p className=" m-11 p-10">No interactions logged .</p>{" "}
+            <p className=" m-11 p-10 text-lg">No interactions yet</p>{" "}
           </div>
         ) : (
           <div className="flex flex-col gap-4">

@@ -29,17 +29,18 @@ const Analytics = () => {
       <div className="flex justify-center items-center min-h-5">
         {!interactionData ? (
           <p className="text-gray-400 text-lg font-normal">
-            No interaction yet
+            No interaction logged yet
           </p>
         ) : (
-          <PieChart width={300} height={300}>
+          <PieChart width={350} height={250}>
             <Pie
               data={data}
               dataKey="value"
               nameKey="name"
-              innerRadius={60}
-              outerRadius={90}
-              paddingAngle={3}
+              innerRadius="75%"
+              outerRadius="100%"
+              cornerRadius="10%"
+              paddingAngle={6}
             >
               {data.map((entry, index) => (
                 <Cell key={index} fill={COLORS[index]} />
@@ -50,22 +51,6 @@ const Analytics = () => {
       </div>
 
       {/* ***** */}
-      {/* <div className="flex justify-center items-center">
-        <PieChart width={300} height={300}>
-          <Pie
-            data={data}
-            dataKey="value"
-            nameKey="name"
-            innerRadius={60}
-            outerRadius={90}
-            paddingAngle={3}
-          >
-            {data.map((entry, index) => (
-              <Cell key={index} fill={COLORS[index]} />
-            ))}
-          </Pie>
-        </PieChart>
-      </div> */}
 
       {/* simple legend */}
       <div className="flex justify-center gap-6 mt-4 text-sm py-5">

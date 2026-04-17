@@ -9,7 +9,7 @@ const Footer = () => {
     <div className=" bg-[#244D3F] ">
       {/* div for contact footer */}
 
-      <div className="h-[103.25 px] flex flex-col justify-center items-center gap-4 p-4 ">
+      <div className="flex flex-col justify-center items-center gap-4 p-6 container mx-auto text-center ">
         <img src={footerImg} alt="" className=" mt-5" />
         <p className="font-normal text-[16px] text-gray-300 mb-4">
           Your personal shelf of meaningful connections. Browse, tend, and
@@ -30,8 +30,8 @@ const Footer = () => {
         </div>
 
         {/* div for copy right */}
-        <div className="flex  justify- items-center gap-40 mt-10">
-          <p className="font-mono text-[12px] text-[#FAFAFA]/60">
+        <div className="flex  justify- items-center flex-col md:flex-row justify-center gap-4 md:gap-40 mt-6 w-full">
+          <p className="font-mono text-[12px] text-[#FAFAFA]/60 text-center">
             © 2026 KeenKeeper. All rights reserved.
           </p>
           <div className=" flex justify-center items-center gap-4">
