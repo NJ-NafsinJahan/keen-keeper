@@ -11,6 +11,7 @@ import { LuVideo } from "react-icons/lu";
 import { RiNotificationSnoozeLine } from "react-icons/ri";
 import { FiArchive } from "react-icons/fi";
 import { RiDeleteBinLine } from "react-icons/ri";
+import { FadeLoader } from "react-spinners";
 
 const KeenDetails = () => {
   const { id } = useParams();
@@ -23,13 +24,25 @@ const KeenDetails = () => {
   console.log(loading, "Loading");
   console.log(expectedFriend, "expectedFriend");
 
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center gap-4 ">
+        <FadeLoader color="#244D3F" speedMultiplier={1.5} /> <br />
+        <h1 className="text-[#244D3F] text-[16px] font-medium">
+          Page is Loading....
+        </h1>
+      </div>
+    );
+  }
+
   return (
     <div className="container mx-auto mt-15">
+      {/* <p className="text-2xl font-semibold mb-4">Friend Details</p> */}
       {/* left section with img div*/}
-      <div className="grid grid-cols-2 justify-center items-center gap-2 my-2 mb-8 border-2 border-amber-400 ">
+      <div className="grid grid-cols-2 justify-center items-center gap-2 my-2 mb-2 ">
         <div className="flex flex-col justify-center items-center gap-2">
           {/* profile div */}
-          <div className="card-body flex flex-col justify-between items-center w-88 h-90 bg-white shadow">
+          <div className="card-body flex flex-col justify-between items-center w-88 h-80 bg-white shadow">
             <figure>
               <img src={SarahImg} alt={expectedFriend?.name} />
             </figure>
@@ -113,6 +126,7 @@ const KeenDetails = () => {
               </p>
             </div>
           </div>
+
           {/* div-02-Static */}
           <div className=" bg-white shadow  rounded-lg   my-7 p-7">
             <div className="flex justify-between items-center">
@@ -138,37 +152,27 @@ const KeenDetails = () => {
 
             <div className=" flex justify-center items-center gap-7">
               {/* call btn */}
-              <div className="">
-                <div className=" shadow rounded-lg bg-[#E9E9E9]/30 h-22 w-44  flex flex-col justify-center items-center gap-2">
-                  <BiPhoneCall className="text-[35px] text-[#1F2937]" />
 
-                  <p className=" font-normal text-[18px] text-[#64748B]">
-                    Call
-                  </p>
-                </div>
-              </div>
+              <button className=" shadow rounded-lg bg-[#E9E9E9]/30 h-22 w-44  flex flex-col justify-center items-center gap-2">
+                <BiPhoneCall className="text-[35px] text-[#1F2937]" />
+
+                <p className=" font-normal text-[18px] text-[#64748B]">Call</p>
+              </button>
 
               {/* Text btn */}
-              <div className="">
-                <div className=" shadow rounded-lg bg-[#E9E9E9]/30 h-22 w-44  flex flex-col justify-center items-center gap-2">
-                  <MdOutlineTextsms className="text-[35px] text-[#1F2937]" />
 
-                  <p className=" font-normal text-[18px] text-[#64748B]">
-                    Text
-                  </p>
-                </div>
-              </div>
+              <button className=" shadow rounded-lg bg-[#E9E9E9]/30 h-22 w-44  flex flex-col justify-center items-center gap-2">
+                <MdOutlineTextsms className="text-[35px] text-[#1F2937]" />
+
+                <p className=" font-normal text-[18px] text-[#64748B]">Text</p>
+              </button>
 
               {/* Video btn */}
-              <div className="">
-                <div className=" shadow rounded-lg bg-[#E9E9E9]/30 h-22 w-44  flex flex-col justify-center items-center gap-2">
-                  <LuVideo className="text-[35px] text-[#1F2937]" />
+              <button className=" shadow rounded-lg bg-[#E9E9E9]/30 h-22 w-44  flex flex-col justify-center items-center gap-2">
+                <LuVideo className="text-[35px] text-[#1F2937]" />
 
-                  <p className=" font-normal text-[18px] text-[#64748B]">
-                    Video
-                  </p>
-                </div>
-              </div>
+                <p className=" font-normal text-[18px] text-[#64748B]">Video</p>
+              </button>
             </div>
           </div>
         </div>

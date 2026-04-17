@@ -7,7 +7,7 @@ import { GoGraph } from "react-icons/go";
 
 const Navbar = () => {
   return (
-    <nav className=" shadow ">
+    <nav className=" shadow">
       <div className=" flex justify-between items-center gap-3 bg-white  p-5 container mx-auto">
         <div>
           <img src={logoImg} alt="" />
