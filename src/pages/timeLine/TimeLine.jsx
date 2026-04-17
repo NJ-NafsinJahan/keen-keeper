@@ -48,7 +48,7 @@ const Timeline = () => {
         {/* Empty page: no interaction */}
         {filteredData.length === 0 ? (
           <div className="text-center text-gray-400 mt-40 shadow">
-            <p>No interactions logged yet</p>{" "}
+            <p className=" m-11 p-10">No interactions logged yet</p>{" "}
           </div>
         ) : (
           <div className="flex flex-col gap-4">
