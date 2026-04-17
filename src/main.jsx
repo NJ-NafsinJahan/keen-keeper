@@ -10,6 +10,8 @@ import StatAnalytics from "./pages/statAnalytics/statAnalytics";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import HomePage from "./pages/homePage/HomePage";
 import KeenDetails from "./pages/keenDetails.jsx/KeenDetails";
+import { TimelineProvider } from "./components/context/TimelineContext";
+import { ToastContainer } from "react-toastify";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +46,9 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <TimelineProvider>
+      <RouterProvider router={router} />
+      <ToastContainer />
+    </TimelineProvider>
   </StrictMode>,
 );

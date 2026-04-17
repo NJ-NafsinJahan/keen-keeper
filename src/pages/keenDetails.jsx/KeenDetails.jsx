@@ -2,9 +2,6 @@ import React from "react";
 import { useParams } from "react-router";
 import useFriends from "../../hooks/useFriends";
 import SarahImg from "../../assets/images/Sarah.png";
-import callImg from "../../assets/images/call.png";
-import textImg from "../../assets/images/text.png";
-import videoImg from "../../assets/images/video.png";
 import { BiPhoneCall } from "react-icons/bi";
 import { MdOutlineTextsms } from "react-icons/md";
 import { LuVideo } from "react-icons/lu";
@@ -12,6 +9,8 @@ import { RiNotificationSnoozeLine } from "react-icons/ri";
 import { FiArchive } from "react-icons/fi";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { FadeLoader } from "react-spinners";
+import { toast } from "react-toastify";
+import { useTimeline } from "../../components/context/TimelineContext";
 
 const KeenDetails = () => {
   const { id } = useParams();
@@ -34,6 +33,23 @@ const KeenDetails = () => {
       </div>
     );
   }
+
+  //   ***********
+  const typeMap = {
+    call: "Call",
+    text: "Text",
+    video: "Video",
+  };
+
+  const { addEvent } = useTimeline();
+  const handleAction = (type) => {
+    const label = typeMap[type];
+    if (!expectedFriend) return;
+
+    addEvent(type, expectedFriend.name);
+    toast.success(`${label} with ${expectedFriend?.name}`, { autoClose: 700 });
+  };
+  //   *****************
 
   return (
     <div className="container mx-auto mt-15">
@@ -153,7 +169,10 @@ const KeenDetails = () => {
             <div className=" flex justify-center items-center gap-7">
               {/* call btn */}
 
-              <button className=" shadow rounded-lg bg-[#E9E9E9]/30 h-22 w-44  flex flex-col justify-center items-center gap-2">
+              <button
+                onClick={() => handleAction("call")}
+                className=" shadow rounded-lg bg-[#E9E9E9]/30 h-22 w-44  flex flex-col justify-center items-center gap-2"
+              >
                 <BiPhoneCall className="text-[35px] text-[#1F2937]" />
 
                 <p className=" font-normal text-[18px] text-[#64748B]">Call</p>
@@ -161,14 +180,20 @@ const KeenDetails = () => {
 
               {/* Text btn */}
 
-              <button className=" shadow rounded-lg bg-[#E9E9E9]/30 h-22 w-44  flex flex-col justify-center items-center gap-2">
+              <button
+                onClick={() => handleAction("text")}
+                className=" shadow rounded-lg bg-[#E9E9E9]/30 h-22 w-44  flex flex-col justify-center items-center gap-2"
+              >
                 <MdOutlineTextsms className="text-[35px] text-[#1F2937]" />
 
                 <p className=" font-normal text-[18px] text-[#64748B]">Text</p>
               </button>
 
               {/* Video btn */}
-              <button className=" shadow rounded-lg bg-[#E9E9E9]/30 h-22 w-44  flex flex-col justify-center items-center gap-2">
+              <button
+                onClick={() => handleAction("video")}
+                className=" shadow rounded-lg bg-[#E9E9E9]/30 h-22 w-44  flex flex-col justify-center items-center gap-2"
+              >
                 <LuVideo className="text-[35px] text-[#1F2937]" />
 
                 <p className=" font-normal text-[18px] text-[#64748B]">Video</p>
